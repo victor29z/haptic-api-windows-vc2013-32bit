@@ -1,0 +1,4 @@
+deltaUSBControl		用于连接设备的dll
+
+USBDevControl			对话框
+

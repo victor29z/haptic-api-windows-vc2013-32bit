@@ -1,0 +1,253 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\USBDevControl.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\USBDevControl.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 USBDevControl"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "USBDevControl，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2013",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_USBDEVCONTROL_DIALOG DIALOGEX 0, 0, 517, 338
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "USBDevControl"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "exit",IDCANCEL,460,317,50,14
+    CTEXT           "6 DOF Haptic device control terminal",IDC_STATIC,7,13,503,8
+    PUSHBUTTON      "Connect device",IDC_BTN_CONNECT_DEV,31,20,60,14
+    CONTROL         "connected",IDC_CHK_CONNECTED,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,106,23,45,10
+    PUSHBUTTON      "I/O MSG",IDC_BTN_IO_MSG,168,46,48,13
+    GROUPBOX        " ",IDC_STATIC,31,75,320,234
+    LTEXT           "motor1:",IDC_STATIC,42,159,26,8
+    LTEXT           "motor2:",IDC_STATIC,42,176,26,8
+    CONTROL         "",IDC_SLID_MOTOR2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_DISABLED | WS_TABSTOP,74,174,100,15
+    LTEXT           "motor3:",IDC_STATIC,42,192,26,8
+    CONTROL         "",IDC_SLID_MOTOR3,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_DISABLED | WS_TABSTOP,74,191,100,15
+    PUSHBUTTON      "TEST1",IDC_BTN_TEST1,166,27,50,14
+    PUSHBUTTON      "set mm timer",IDC_BTN_MM_TIMER,31,37,60,14,WS_DISABLED
+    CONTROL         "mm timer on",IDC_CHK_MM_TIMER,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,106,39,50,10
+    CONTROL         "enable force",IDC_CHK_FOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,74,50,10
+    CONTROL         "",IDC_SLID_MOTOR1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_NOTIFYBEFOREMOVE | WS_DISABLED | WS_TABSTOP,74,157,100,15
+    LTEXT           "Fx",IDC_STATIC,46,100,8,8
+    LTEXT           "Fy",IDC_STATIC,46,115,8,8
+    LTEXT           "Fz",IDC_STATIC,46,131,8,8
+    CONTROL         "",IDC_LIST_DEV,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,180,189,148,114
+    LTEXT           "手柄状态指示:",IDC_STATIC,183,173,52,8
+    CONTROL         "Force Control",IDC_RAD_F,"Button",BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP,41,86,58,10
+    CONTROL         "Actuators Control",IDC_RAD_ACT,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,40,145,71,10
+    LTEXT           "motor4:",IDC_STATIC,43,211,26,8
+    LTEXT           "motor5:",IDC_STATIC,43,229,26,8
+    CONTROL         "",IDC_SLID_MOTOR4,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_DISABLED | WS_TABSTOP,75,210,100,15
+    LTEXT           "motor6:",IDC_STATIC,44,247,26,8
+    CONTROL         "",IDC_SLID_MOTOR5,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_DISABLED | WS_TABSTOP,75,227,100,15
+    CONTROL         "",IDC_SLID_MOTOR6,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_DISABLED | WS_TABSTOP,75,245,100,15
+    CONTROL         "",IDC_SLID_FY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_DISABLED | WS_TABSTOP,73,114,100,15
+    CONTROL         "",IDC_SLID_FZ,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_DISABLED | WS_TABSTOP,73,131,100,15
+    CONTROL         "",IDC_SLID_FX,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_DISABLED | WS_TABSTOP,73,97,100,15
+    CONTROL         "",IDC_LIST_FORCE,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,184,88,144,78
+    PUSHBUTTON      "set timer 1",IDC_BTN_TIMER1,31,53,60,14
+    CONTROL         "timer1",IDC_CHK_TIMER1,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,105,55,50,10
+    PUSHBUTTON      "beginThread",IDC_BTN_BG_TH,357,28,58,14
+    LTEXT           "motor1:",IDC_STATIC,365,91,26,8
+    LTEXT           "motor2:",IDC_STATIC,365,108,26,8
+    LTEXT           "motor3:",IDC_STATIC,365,124,26,8
+    CONTROL         "",IDC_SLID_SERVOM1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,397,88,100,15
+    LTEXT           "motor4:",IDC_STATIC,365,143,26,8
+    LTEXT           "motor5:",IDC_STATIC,365,160,26,8
+    LTEXT           "motor6:",IDC_STATIC,365,179,26,8
+    LTEXT           "pos servo:",IDC_STATIC,362,75,52,8
+    CONTROL         "",IDC_SLID_SERVOM2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,397,106,100,15
+    CONTROL         "",IDC_SLID_SERVOM3,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,397,123,100,15
+    CONTROL         "",IDC_SLID_SERVOM4,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,397,142,100,15
+    CONTROL         "",IDC_SLID_SERVOM5,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,397,160,100,15
+    CONTROL         "",IDC_SLID_SERVOM6,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,397,179,100,15
+    PUSHBUTTON      "set servos P",IDC_BTN_SET_SERVO,420,73,50,14
+    PUSHBUTTON      "get torque value",IDC_BTN_BG_TH2,357,47,59,14
+    CONTROL         "servo thread on",IDC_CHK_SERVO,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,425,29,63,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "USBDevControl.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "USBDevControl.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_USBDEVCONTROL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 510
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 331
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 USBDevControl(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\USBDevControl.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
