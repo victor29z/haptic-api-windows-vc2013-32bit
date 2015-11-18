@@ -67,7 +67,7 @@ using namespace Eigen;
 // global for 
 
 // global constant
-const double t2cur[6]={327000,327000,327000,21622,21622,25193};
+const double t2cur[6]={327000,327000,327000,327000,327000,220000};
 //const double t2cur[6]={17004,17004,17004,21622,21622,25193};
 //const double t2cur[6]={1167075,1167075,1167075,21622,21622,25193};//transform the current scale to -32760~32760
 const double trRatio[6] = {14.25,14.25, 14.25 ,15.27, 14.18, 6.46};

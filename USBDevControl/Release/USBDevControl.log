@@ -1,0 +1,17 @@
+﻿生成启动时间为 2015/11/18 12:51:36。
+     1>项目“E:\6dof\zl-dev\DevCtrl580-140811\DevCtrl580-140811 - 2013\USBDevControl\USBDevControl.vcxproj”在节点 2 上(Build 个目标)。
+     1>Link:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\6dof\zl-dev\DevCtrl580-140811\DevCtrl580-140811 - 2013\Release\USBDevControl.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"E:\6dof\zl-dev\DevCtrl580-140811\DevCtrl580-140811 - 2013\Release\USBDevControl.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\6dof\zl-dev\DevCtrl580-140811\DevCtrl580-140811 - 2013\Release\USBDevControl.lib" /MACHINE:X86 /SAFESEH /SAFESEH:NO Release\USBDevControl.res
+         Release\MyThread.obj
+         Release\stdafx.obj
+         Release\USBDevControl.obj
+         Release\USBDevControlDlg.obj
+         "E:\6dof\zl-dev\DevCtrl580-140811\DevCtrl580-140811 - 2013\Release\DeltaUSB580.lib"
+         正在生成代码
+         已完成代码的生成
+         USBDevControl.vcxproj -> E:\6dof\zl-dev\DevCtrl580-140811\DevCtrl580-140811 - 2013\Release\USBDevControl.exe
+     1>已完成生成项目“E:\6dof\zl-dev\DevCtrl580-140811\DevCtrl580-140811 - 2013\USBDevControl\USBDevControl.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:07.77

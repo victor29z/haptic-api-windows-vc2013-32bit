@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "USBDevControl", "USBDevControl\USBDevControl.vcproj", "{F5F3E8F6-976F-40AA-BCDA-CB71C0ED1154}"
+	ProjectSection(ProjectDependencies) = postProject
+		{41D9E918-EC37-4A4C-92DD-0403EF6DDB6C} = {41D9E918-EC37-4A4C-92DD-0403EF6DDB6C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DeltaUSB580", "DeltaUSBControl\DeltaUSBControl.vcproj", "{41D9E918-EC37-4A4C-92DD-0403EF6DDB6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5F3E8F6-976F-40AA-BCDA-CB71C0ED1154}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F5F3E8F6-976F-40AA-BCDA-CB71C0ED1154}.Debug|Win32.Build.0 = Debug|Win32
+		{F5F3E8F6-976F-40AA-BCDA-CB71C0ED1154}.Release|Win32.ActiveCfg = Release|Win32
+		{F5F3E8F6-976F-40AA-BCDA-CB71C0ED1154}.Release|Win32.Build.0 = Release|Win32
+		{41D9E918-EC37-4A4C-92DD-0403EF6DDB6C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{41D9E918-EC37-4A4C-92DD-0403EF6DDB6C}.Debug|Win32.Build.0 = Debug|Win32
+		{41D9E918-EC37-4A4C-92DD-0403EF6DDB6C}.Release|Win32.ActiveCfg = Release|Win32
+		{41D9E918-EC37-4A4C-92DD-0403EF6DDB6C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
